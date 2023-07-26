@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-b lack h-screen">
+
+
+    <div class="heading flex      justify-center items-center p-[2%] text-3xl">
+        Rock Paper Scissors
+    </div>
+    <div class="input h-[0%] space-x-8   p-[2%]  text-xl flex justify-center items-center w-[100%] ">
+        <div class="p-2 w-[45%]  border-2 border-black flex justify-center items-center     ">
+            <input class=" inputnum outline-none w-[100%]" type="text"
+                placeholder="First Enter no of chance you want to play then click on start.">
+        </div>
+        <div class="rem flex flex-col space-y-5 justify-center items-center">
+            <span><button class=" start-button border-2 border-black rounded-full px-3 py-1">Start</button></span>
+            <span> remaining chance -> <span class="remaining">0</span> </span>
+            <span> Draw chance -> <span class="draw">0</span> </span>
+        </div>
+    </div>
+    <div class="container flex items-center justify-center m-auto w-[80%] h-[70%]">
+        <div class="input w-[90%] h-[100%]">
+            <div class="user h-[50%] flex        justify-center items-center space-x-[15%] text-[60px]">
+                <div class="name w-[20%]">
+                    User:
+                </div>
+                <div class="choiceuser flex w-[80%] space-x-[27%]">
+                    <div class="  p-5">
+                        <button value="Rock" class="userchoice">✊</button>
+                    </div>
+                    <div class=" p-5">
+                        <button value="Paper" class="userchoice">🖐</button>
+                    </div>
+                    <div class="p-5">
+                        <button value="Scissor" class="userchoice">✌</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="robo h-[50%] flex justify-center items-center space-x-[15%] text-[60px]">
+                <div class="name w-[20%]">
+                    Robot:
+                </div>
+                <div class="flex w-[80%] space-x-[27%]">
+                    <div class="p-5">
+                        <button>✊</button>
+                    </div>
+                    <div class="p-5">
+                        <button>🖐</button>
+                    </div>
+                    <div class="p-5">
+                        <button>✌</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="result       h-[100%] w-[10%] text-[30px] flex flex-col justify-around">
+            <div class="score flex h-[0%] justify-center items-center text-[30px]">
+                Score
+            </div>
+            <div class="user-score h-[47%]  flex justify-center items-center text-[60px]">0</div>
+            <div class="robo-score h-[47%]   flex justify-center items-center  text-[60px]">0</div>
+        </div>
+    </div>
+    <div class="creater       flex items-center justify-center w-screen fixed bottom-0">
+        Made by Parth 😀
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
