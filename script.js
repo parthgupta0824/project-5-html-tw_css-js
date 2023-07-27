@@ -2,7 +2,7 @@ function showResult(tempscore, playerChoice, computerChoice) {
     if (num < 0) {
         alert('Enter the value first and click on start button');
     }
-    else if (num <= 0) {
+    else if (num == 0) {
         let winner = 'user';
         let r = robo_score.innerHTML
         let u = user_score.innerHTML
@@ -47,7 +47,7 @@ function getComputerChoice() {
 }
 function getResult(playerChoice, computerChoice) {
     let tempscore = -1
-    if (playerChoice == computerChoice) {
+    if (playerChoice == computerChoice && num > 0x) {
         let dr = document.querySelector('.draw');
         let sc = dr.innerHTML
         let t = parseInt(`${sc}`) + 1;
